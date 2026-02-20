@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
     <title>Home</title>
 </head>
 <body>
-    <h1>Inicio de Sesión</h1>
-    <nav>
-        <a href="./">Home</a>
-        <a href="/profile">Profile</a>
-        <a href="/tags">Tags</a>
-    </nav><br>
-    <div>
-        <h3>Login</h3>
-        <input type="text" placeholder="Username"><br><br>
-        <input type="password" placeholder="Password">
-        <br><br>
-        <button type="submit">Submit</button>
+    <nav class="navbar navbar-expand-lg bg-danger" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tags.html">Tags</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="position-relative">
+        <div class="position-fixed top-50 start-50 translate-middle" style="width: 320px;">
+            <div class="bg-danger text-white p-5 rounded-4">
+                <h3 class="mb-3">Login</h3>
+                <input class="form-control bg-light mb-3" type="text" placeholder="Username">
+                <input class="form-control bg-light mb-3" type="password" placeholder="Password">
+                <button class="btn btn-light w-100" type="submit">Submit</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
